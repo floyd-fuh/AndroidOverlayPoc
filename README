@@ -1,0 +1,14 @@
+Code published along with my talk "Android apps in sheep's clothing"
+
+This is an Android malware application that exploits the fact that Android has APIs to draw over the screen/display and therefore fake views. 
+
+This Android app also works on Blackberry and can be used for the same exploit there.
+
+References and more information:
+
+"Android apps in sheep's clothing" on http://www.modzero.ch/modlog/index.html
+http://www.sig-switzerland.ch/event_zurich4.php
+(German) http://www.inside-it.ch/articles/39720
+(German) http://www.nzz.ch/mehr/digital/tobias-ospelt-modzero-android-sicherheitsluecke-1.18514865
+
+
