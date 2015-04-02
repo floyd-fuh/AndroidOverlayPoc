@@ -3,7 +3,8 @@
     android:versionCode="2"
     android:versionName="1.0" >
     <uses-permission android:name="android.permission.GET_TASKS"/>
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- As a PoC we don't use this permission: -->
+    <!-- <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/> -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
  	<uses-permission android:name="android.permission.INTERNET" /> 
     <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="19" />

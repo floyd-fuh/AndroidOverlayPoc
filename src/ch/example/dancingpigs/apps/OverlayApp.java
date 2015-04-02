@@ -7,7 +7,7 @@ public class OverlayApp{
 	
 	protected OverlayActivity[] activities;
 	protected MainService service;
-	private String packageName;
+	protected String packageName;
 
 	public OverlayApp(MainService service, String _packageName, String _className){
 		super();
